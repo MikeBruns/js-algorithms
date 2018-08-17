@@ -38,11 +38,17 @@ describe('Find the double in array', () => {
       expect(findTheDoubleUnordered([5,3,1,2,4,7,8,2,10])).toBe(3);
       expect(findTheDoubleUnordered([5,3,1,2,4,7,8,10,5])).toBe(0);
     });
+    it('should return -1 for no reapeating values in array', () => {
+      expect(findTheDoubleUnordered([5,3,1,2,4,7,8,10])).toBe(-1);
+    });
   });
   describe('Ordered', () => {
     it('should return the index of the first duplicate in an ordered array', () => {
       expect(findTheDoubleOrdered([1,2,3,4,5,5,6,7,8,9,10])).toBe(4);
       expect(findTheDoubleOrdered([1,1,2,3,4,5,5,6,7,8,9,10])).toBe(0);
+    });
+    it('should return -1 for no reapeating values in array', () => {
+      expect(findTheDoubleOrdered([1,2,3,4,5,6,7,8,9,10])).toBe(-1);
     });
   });
 });
