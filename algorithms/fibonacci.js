@@ -1,6 +1,6 @@
 //find the nth number of the fibonacci sequence
 
-// 1, 1, 2, 3, 5, 8, 13
+// 0, 1, 1, 2, 3, 5, 8, 13, ...
 //n: 5 = 5
 const fibonacciNthValueOf = (n) => {
   let fibonacciList = [0, 1];
@@ -18,4 +18,4 @@ const fibonacciNthValueOf = (n) => {
 };
 
 
-// console.log(fibonacciNthValueOf(0));
+console.log(fibonacciNthValueOf(6));
