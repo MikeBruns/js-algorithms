@@ -17,7 +17,7 @@ const firstNonRepeatingChar = (str) => {
   }
 
   for (let key in usedChars) {
-    if (usedChars.hasOwnProperty(key) && usedChars[key] === 1) {
+    if (usedChars[key] === 1) {
       // console.log(`key: ${key} | value: ${usedChars[key]}`);
       return key;
     }
