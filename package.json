@@ -1,0 +1,16 @@
+{
+  "name": "js-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "is-prime.js",
+  "scripts": {
+    "test": "mocha ./algorithms/**/*.js",
+    "test:watch": "nodemon --exec \"npm test\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^5.2.0"
+  }
+}
