@@ -16,11 +16,13 @@ const findTheDoubleUnordered = (arr) => {
 };
 
 // console.log(findTheDoubleUnordered([8,3,1,2,4,7,8,8,10]));
-// 3
 
-// O(n)
+// O(n/2)
 const findTheDoubleOrdered = (arr) => {
-  for(let i = 0; i < arr.length; i++) {
+  for(let i = 0; i < arr.length; i = i+2) {
+    if (arr[i-1] && arr[i] === arr[i-1]) {
+      return i - 1;
+    }
     if (arr[i+1] && arr[i] === arr[i+1]) {
       return i;
     }
@@ -28,9 +30,7 @@ const findTheDoubleOrdered = (arr) => {
   return -1;
 };
 
-
 // console.log(findTheDoubleOrdered([1,2,3,4,5,5,6,7,8,9,10]));
-// 4
 
 describe('Find the double in array', () => {
   describe('Unordered', () => {
